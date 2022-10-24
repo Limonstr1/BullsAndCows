@@ -14,6 +14,11 @@ public class StartGame {
         internalFileWriter = fileWriter;
     }
 
+    /**
+     * Запускает сравнение чисел введенных пользователем и сгенерированным
+     * @param userNumber Введенное пользователем число
+     * @return Результат сравнения чисел
+     */
     private String getGameResult(String userNumber) {
         List<Integer> userNumberList = new ArrayList<Integer>();
 
@@ -27,7 +32,11 @@ public class StartGame {
         return checkResult;
     }
 
-    public void writeGame() throws IOException {
+    /**
+     * Запускает единичную игру, выполняется, пока пользователь не угадает число
+     * @throws IOException
+     */
+    public void playSingleGame() throws IOException {
         int attemptsNumber = 0;
         Words words = new Words();
         while (true) {
@@ -49,6 +58,10 @@ public class StartGame {
         }
     }
 
+    /**
+     * Спрашивает пользователя, нужно ли продолжать игру
+     * @return Ответ пользователя
+     */
     public String askAboutRepeat() {
         String answer = null;
         while (true) {

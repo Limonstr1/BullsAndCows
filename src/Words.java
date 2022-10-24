@@ -1,4 +1,10 @@
 public class Words {
+
+    /**
+     * Возвращает слово Попыток в корректной форме для заданного количества
+     * @param attemptsNumber Количество попыток
+     * @return Форма слова Попыток в корректной форме
+     */
     public String getAttemptWord (int attemptsNumber) {
         String word = "попыток";
         if ((attemptsNumber%100) == 11) {

@@ -3,6 +3,10 @@ import java.util.List;
 import java.util.Random;
 
 public class Generator {
+    /**
+     * Генерирует случайное число из 4 чисел, причем первой цифрой может быть ноль
+     * @return Сгенерированное число в виде целочисленного списка
+     */
     public List<Integer> generateNewNumber() {
         List<Integer> numberList = new ArrayList<Integer>();
         Random random = new Random();

@@ -3,6 +3,11 @@ import java.util.List;
 import java.util.Scanner;
 
 public class UserInput {
+
+    /**
+     * Принимает введенное пользователем число
+     * @return Введенное пользователем число
+     */
     public String getUserInput() {
         List<Integer> userNumberList = new ArrayList<>();
         String input = "";
